@@ -5,23 +5,24 @@ using namespace std;
 
 int main() {
     setlocale(LC_ALL, "RU");
-
+    //РСЃС…РѕРґРЅР°СЏ СЃС‚СЂРѕРєР°
     string str = "AaBbCcDdEe";
 
     string uppercase, lowercase;
 
-    // Копируем каждый второй символ начиная с 0
+    // РџРѕР»СѓС‡Р°РµРј Р·Р°РіР»Р°РІРЅС‹Рµ Р±СѓРєРІС‹ (РєР°Р¶РґР°СЏ РІС‚РѕСЂР°СЏ Р±СѓРєРІР°, РЅР°С‡РёРЅР°СЏ СЃ РёРЅРґРµРєСЃР° 0)
     for (int i = 0; i < str.size(); i += 2) {
         uppercase.push_back(str[i]);
     }
 
-    // Копируем каждый второй символ начиная с 1
+    //РџРѕР»СѓС‡Р°РµРј СЃС‚СЂРѕС‡РЅС‹Рµ Р±СѓРєРІС‹ (РєР°Р¶РґР°СЏ РІС‚РѕСЂР°СЏ Р±СѓРєРІР°, РЅР°С‡РёРЅР°СЏ СЃ РёРЅРґРµРєСЃР° 1)
     for (int i = 1; i < str.size(); i += 2) {
         lowercase.push_back(str[i]);
     }
 
-    cout << "Заглавные: " << uppercase << endl;
-    cout << "Строчные: " << lowercase << endl;
+    cout << "Р—Р°РіР»Р°РІРЅС‹Рµ Р±СѓРєРІС‹: " << uppercase << endl;
+    cout << "РЎС‚СЂРѕС‡РЅС‹Рµ Р±СѓРєРІС‹: " << lowercase << endl;
 
     return 0;
+
 }
